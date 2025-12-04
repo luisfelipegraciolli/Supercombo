@@ -9,7 +9,7 @@ package pas.restaurante;
  *
  * @author edumo
  */
-public class Combo extends CompostoCardapio{
+public class Combo extends CompostoCardapio implements ItemCardapio{
 
     public Combo(String nome) {
         super(nome);

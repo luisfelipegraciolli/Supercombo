@@ -38,15 +38,16 @@ public class Main {
         megaComboFamilia.addItem(comboSaudavel);
         
         // DEMONSTRAÇÃO DO PROBLEMA RESOLVIDO:
-        // Adicionando um item isolado (extra) diretamente no MegaCombo
+        // Adicionando um item isolado diretamente no MegaCombo
         Prato sobremesaExtra = new Prato(6, "Pudim Gigante", 12.0f, "Leite, ovo", 0);
         megaComboFamilia.addItem(sobremesaExtra);
 
         System.out.println("\n--- Mega Combo ---");
         System.out.println("Conteúdo do " + megaComboFamilia.getNome() + ":");
-        System.out.println(" - " + comboClassico.getNome());
-        System.out.println(" - " + comboSaudavel.getNome());
-        System.out.println(" - " + sobremesaExtra.getNome() + " (Item avulso)");
+
+        for (int i = 0; i < megaComboFamilia.numItens(); i++) {
+            System.out.println(" - " + megaComboFamilia.getItem(i).getNome());
+        }
 
         System.out.println("Preço TOTAL: R$ " + megaComboFamilia.getPreco());
     }
