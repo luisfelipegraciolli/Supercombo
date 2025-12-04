@@ -8,7 +8,7 @@ package pas.restaurante;
  *
  * @author edumo
  */
-public class Bebida extends Item {
+public class Bebida extends Item implements ItemCardapio{
     private final int quantidade_ml;
     public Bebida(int codigo, String nome, float preco, int quantidade_ml) {
         super(codigo, nome, preco);
@@ -17,4 +17,5 @@ public class Bebida extends Item {
     public int getQuantidadeMl(){
         return quantidade_ml;
     }
+
 }

@@ -4,36 +4,14 @@
  */
 package pas.restaurante;
 
-import java.util.ArrayList;
 
 /**
  *
  * @author edumo
  */
-public class Combo {
-    private final ArrayList<Item>    itens = new ArrayList();
-    private final String nome;  
-    
-    public Combo(String nome){
-        this.nome = nome;
-    }
-    public String getNome(){
-        return nome;
-    }
-    public void addItem(Item p){
-        itens.add(p);
-    }
-    public Item getItem(int i){
-        return itens.get(i);
-    }
-    public int numItens(){
-        return itens.size();
-    }
-    public float getPreco(){
-        float total=0;
-        for(Item i:itens){
-            total += i.getPreco();
-        }
-        return total;
+public class Combo extends CompostoCardapio{
+
+    public Combo(String nome) {
+        super(nome);
     }
 }

@@ -8,7 +8,7 @@ package pas.restaurante;
  *
  * @author edumo
  */
-public class Prato extends Item{
+public class Prato extends Item implements ItemCardapio{
 
     private final int tempoPreparo;
     private final String receita;

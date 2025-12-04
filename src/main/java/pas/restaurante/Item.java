@@ -8,7 +8,7 @@ package pas.restaurante;
  *
  * @author edumo
  */
-public abstract class Item {
+public abstract class Item implements ItemCardapio{
     private final int codigo;
     private final String nome;
     private float preco;
